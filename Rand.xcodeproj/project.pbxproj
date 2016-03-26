@@ -1,0 +1,768 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E98EAE7A1CA6CE2700C669CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE791CA6CE2700C669CB /* AppDelegate.swift */; };
+		E98EAE7C1CA6CE2700C669CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE7B1CA6CE2700C669CB /* ViewController.swift */; };
+		E98EAE7F1CA6CE2700C669CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98EAE7D1CA6CE2700C669CB /* Main.storyboard */; };
+		E98EAE811CA6CE2700C669CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98EAE801CA6CE2700C669CB /* Assets.xcassets */; };
+		E98EAE841CA6CE2700C669CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98EAE821CA6CE2700C669CB /* LaunchScreen.storyboard */; };
+		E98EAE8F1CA6CE2700C669CB /* RandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE8E1CA6CE2700C669CB /* RandTests.swift */; };
+		E98EAE9A1CA6CE2700C669CB /* RandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE991CA6CE2700C669CB /* RandUITests.swift */; };
+		E98EAE9F1CA6CE2700C669CB /* Rand WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E98EAE9E1CA6CE2700C669CB /* Rand WatchKit App.app */; };
+		E98EAEA51CA6CE2700C669CB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98EAEA31CA6CE2700C669CB /* Interface.storyboard */; };
+		E98EAEA71CA6CE2800C669CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98EAEA61CA6CE2800C669CB /* Assets.xcassets */; };
+		E98EAEAE1CA6CE2800C669CB /* Rand WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E98EAEB31CA6CE2800C669CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */; };
+		E98EAEB51CA6CE2800C669CB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */; };
+		E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB61CA6CE2800C669CB /* GlanceController.swift */; };
+		E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */; };
+		E98EAEBB1CA6CE2800C669CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98EAEBA1CA6CE2800C669CB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E98EAE8B1CA6CE2700C669CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98EAE6E1CA6CE2700C669CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98EAE751CA6CE2700C669CB;
+			remoteInfo = Rand;
+		};
+		E98EAE961CA6CE2700C669CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98EAE6E1CA6CE2700C669CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98EAE751CA6CE2700C669CB;
+			remoteInfo = Rand;
+		};
+		E98EAEA01CA6CE2700C669CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98EAE6E1CA6CE2700C669CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98EAE9D1CA6CE2700C669CB;
+			remoteInfo = "Rand WatchKit App";
+		};
+		E98EAEAF1CA6CE2800C669CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E98EAE6E1CA6CE2700C669CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E98EAEAC1CA6CE2800C669CB;
+			remoteInfo = "Rand WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E98EAEC21CA6CE2800C669CB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E98EAEAE1CA6CE2800C669CB /* Rand WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAEC61CA6CE2800C669CB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E98EAE9F1CA6CE2700C669CB /* Rand WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E98EAE761CA6CE2700C669CB /* Rand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rand.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98EAE791CA6CE2700C669CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E98EAE7B1CA6CE2700C669CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E98EAE7E1CA6CE2700C669CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E98EAE801CA6CE2700C669CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E98EAE831CA6CE2700C669CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E98EAE851CA6CE2700C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98EAE8A1CA6CE2700C669CB /* RandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98EAE8E1CA6CE2700C669CB /* RandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandTests.swift; sourceTree = "<group>"; };
+		E98EAE901CA6CE2700C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98EAE951CA6CE2700C669CB /* RandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98EAE991CA6CE2700C669CB /* RandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandUITests.swift; sourceTree = "<group>"; };
+		E98EAE9B1CA6CE2700C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98EAE9E1CA6CE2700C669CB /* Rand WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rand WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98EAEA41CA6CE2700C669CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E98EAEA61CA6CE2800C669CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E98EAEA81CA6CE2800C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rand WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E98EAEB61CA6CE2800C669CB /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E98EAEBA1CA6CE2800C669CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E98EAEBC1CA6CE2800C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E98EAE731CA6CE2700C669CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE871CA6CE2700C669CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE921CA6CE2700C669CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAEAA1CA6CE2800C669CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E98EAE6D1CA6CE2700C669CB = {
+			isa = PBXGroup;
+			children = (
+				E98EAE781CA6CE2700C669CB /* Rand */,
+				E98EAE8D1CA6CE2700C669CB /* RandTests */,
+				E98EAE981CA6CE2700C669CB /* RandUITests */,
+				E98EAEA21CA6CE2700C669CB /* Rand WatchKit App */,
+				E98EAEB11CA6CE2800C669CB /* Rand WatchKit Extension */,
+				E98EAE771CA6CE2700C669CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E98EAE771CA6CE2700C669CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAE761CA6CE2700C669CB /* Rand.app */,
+				E98EAE8A1CA6CE2700C669CB /* RandTests.xctest */,
+				E98EAE951CA6CE2700C669CB /* RandUITests.xctest */,
+				E98EAE9E1CA6CE2700C669CB /* Rand WatchKit App.app */,
+				E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E98EAE781CA6CE2700C669CB /* Rand */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAE791CA6CE2700C669CB /* AppDelegate.swift */,
+				E98EAE7B1CA6CE2700C669CB /* ViewController.swift */,
+				E98EAE7D1CA6CE2700C669CB /* Main.storyboard */,
+				E98EAE801CA6CE2700C669CB /* Assets.xcassets */,
+				E98EAE821CA6CE2700C669CB /* LaunchScreen.storyboard */,
+				E98EAE851CA6CE2700C669CB /* Info.plist */,
+			);
+			path = Rand;
+			sourceTree = "<group>";
+		};
+		E98EAE8D1CA6CE2700C669CB /* RandTests */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAE8E1CA6CE2700C669CB /* RandTests.swift */,
+				E98EAE901CA6CE2700C669CB /* Info.plist */,
+			);
+			path = RandTests;
+			sourceTree = "<group>";
+		};
+		E98EAE981CA6CE2700C669CB /* RandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAE991CA6CE2700C669CB /* RandUITests.swift */,
+				E98EAE9B1CA6CE2700C669CB /* Info.plist */,
+			);
+			path = RandUITests;
+			sourceTree = "<group>";
+		};
+		E98EAEA21CA6CE2700C669CB /* Rand WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAEA31CA6CE2700C669CB /* Interface.storyboard */,
+				E98EAEA61CA6CE2800C669CB /* Assets.xcassets */,
+				E98EAEA81CA6CE2800C669CB /* Info.plist */,
+			);
+			path = "Rand WatchKit App";
+			sourceTree = "<group>";
+		};
+		E98EAEB11CA6CE2800C669CB /* Rand WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */,
+				E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */,
+				E98EAEB61CA6CE2800C669CB /* GlanceController.swift */,
+				E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */,
+				E98EAEBA1CA6CE2800C669CB /* Assets.xcassets */,
+				E98EAEBC1CA6CE2800C669CB /* Info.plist */,
+			);
+			path = "Rand WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E98EAE751CA6CE2700C669CB /* Rand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98EAEC71CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand" */;
+			buildPhases = (
+				E98EAE721CA6CE2700C669CB /* Sources */,
+				E98EAE731CA6CE2700C669CB /* Frameworks */,
+				E98EAE741CA6CE2700C669CB /* Resources */,
+				E98EAEC61CA6CE2800C669CB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98EAEA11CA6CE2700C669CB /* PBXTargetDependency */,
+			);
+			name = Rand;
+			productName = Rand;
+			productReference = E98EAE761CA6CE2700C669CB /* Rand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E98EAE891CA6CE2700C669CB /* RandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98EAECA1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "RandTests" */;
+			buildPhases = (
+				E98EAE861CA6CE2700C669CB /* Sources */,
+				E98EAE871CA6CE2700C669CB /* Frameworks */,
+				E98EAE881CA6CE2700C669CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98EAE8C1CA6CE2700C669CB /* PBXTargetDependency */,
+			);
+			name = RandTests;
+			productName = RandTests;
+			productReference = E98EAE8A1CA6CE2700C669CB /* RandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E98EAE941CA6CE2700C669CB /* RandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98EAECD1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "RandUITests" */;
+			buildPhases = (
+				E98EAE911CA6CE2700C669CB /* Sources */,
+				E98EAE921CA6CE2700C669CB /* Frameworks */,
+				E98EAE931CA6CE2700C669CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98EAE971CA6CE2700C669CB /* PBXTargetDependency */,
+			);
+			name = RandUITests;
+			productName = RandUITests;
+			productReference = E98EAE951CA6CE2700C669CB /* RandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E98EAE9D1CA6CE2700C669CB /* Rand WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98EAEC31CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand WatchKit App" */;
+			buildPhases = (
+				E98EAE9C1CA6CE2700C669CB /* Resources */,
+				E98EAEC21CA6CE2800C669CB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E98EAEB01CA6CE2800C669CB /* PBXTargetDependency */,
+			);
+			name = "Rand WatchKit App";
+			productName = "Rand WatchKit App";
+			productReference = E98EAE9E1CA6CE2700C669CB /* Rand WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E98EAEAC1CA6CE2800C669CB /* Rand WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E98EAEBF1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand WatchKit Extension" */;
+			buildPhases = (
+				E98EAEA91CA6CE2800C669CB /* Sources */,
+				E98EAEAA1CA6CE2800C669CB /* Frameworks */,
+				E98EAEAB1CA6CE2800C669CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rand WatchKit Extension";
+			productName = "Rand WatchKit Extension";
+			productReference = E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E98EAE6E1CA6CE2700C669CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Morten Kals";
+				TargetAttributes = {
+					E98EAE751CA6CE2700C669CB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E98EAE891CA6CE2700C669CB = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E98EAE751CA6CE2700C669CB;
+					};
+					E98EAE941CA6CE2700C669CB = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E98EAE751CA6CE2700C669CB;
+					};
+					E98EAE9D1CA6CE2700C669CB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E98EAEAC1CA6CE2800C669CB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E98EAE711CA6CE2700C669CB /* Build configuration list for PBXProject "Rand" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E98EAE6D1CA6CE2700C669CB;
+			productRefGroup = E98EAE771CA6CE2700C669CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E98EAE751CA6CE2700C669CB /* Rand */,
+				E98EAE891CA6CE2700C669CB /* RandTests */,
+				E98EAE941CA6CE2700C669CB /* RandUITests */,
+				E98EAE9D1CA6CE2700C669CB /* Rand WatchKit App */,
+				E98EAEAC1CA6CE2800C669CB /* Rand WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E98EAE741CA6CE2700C669CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAE841CA6CE2700C669CB /* LaunchScreen.storyboard in Resources */,
+				E98EAE811CA6CE2700C669CB /* Assets.xcassets in Resources */,
+				E98EAE7F1CA6CE2700C669CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE881CA6CE2700C669CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE931CA6CE2700C669CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE9C1CA6CE2700C669CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAEA71CA6CE2800C669CB /* Assets.xcassets in Resources */,
+				E98EAEA51CA6CE2700C669CB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAEAB1CA6CE2800C669CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAEBB1CA6CE2800C669CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E98EAE721CA6CE2700C669CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAE7C1CA6CE2700C669CB /* ViewController.swift in Sources */,
+				E98EAE7A1CA6CE2700C669CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE861CA6CE2700C669CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAE8F1CA6CE2700C669CB /* RandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAE911CA6CE2700C669CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAE9A1CA6CE2700C669CB /* RandUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98EAEA91CA6CE2800C669CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E98EAEB51CA6CE2800C669CB /* ExtensionDelegate.swift in Sources */,
+				E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */,
+				E98EAEB31CA6CE2800C669CB /* InterfaceController.swift in Sources */,
+				E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E98EAE8C1CA6CE2700C669CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98EAE751CA6CE2700C669CB /* Rand */;
+			targetProxy = E98EAE8B1CA6CE2700C669CB /* PBXContainerItemProxy */;
+		};
+		E98EAE971CA6CE2700C669CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98EAE751CA6CE2700C669CB /* Rand */;
+			targetProxy = E98EAE961CA6CE2700C669CB /* PBXContainerItemProxy */;
+		};
+		E98EAEA11CA6CE2700C669CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98EAE9D1CA6CE2700C669CB /* Rand WatchKit App */;
+			targetProxy = E98EAEA01CA6CE2700C669CB /* PBXContainerItemProxy */;
+		};
+		E98EAEB01CA6CE2800C669CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E98EAEAC1CA6CE2800C669CB /* Rand WatchKit Extension */;
+			targetProxy = E98EAEAF1CA6CE2800C669CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E98EAE7D1CA6CE2700C669CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E98EAE7E1CA6CE2700C669CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E98EAE821CA6CE2700C669CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E98EAE831CA6CE2700C669CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E98EAEA31CA6CE2700C669CB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E98EAEA41CA6CE2700C669CB /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E98EAEBD1CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E98EAEBE1CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E98EAEC01CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Rand WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E98EAEC11CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Rand WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		E98EAEC41CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Rand_WatchKit_Extension;
+				INFOPLIST_FILE = "Rand WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		E98EAEC51CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Rand_WatchKit_Extension;
+				INFOPLIST_FILE = "Rand WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		E98EAEC81CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E98EAEC91CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rand/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.Rand;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E98EAECB1CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.RandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rand.app/Rand";
+			};
+			name = Debug;
+		};
+		E98EAECC1CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RandTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.RandTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rand.app/Rand";
+			};
+			name = Release;
+		};
+		E98EAECE1CA6CE2800C669CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RandUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.RandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rand;
+			};
+			name = Debug;
+		};
+		E98EAECF1CA6CE2800C669CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RandUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = no.kals.RandUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Rand;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E98EAE711CA6CE2700C669CB /* Build configuration list for PBXProject "Rand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAEBD1CA6CE2800C669CB /* Debug */,
+				E98EAEBE1CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E98EAEBF1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAEC01CA6CE2800C669CB /* Debug */,
+				E98EAEC11CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E98EAEC31CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAEC41CA6CE2800C669CB /* Debug */,
+				E98EAEC51CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E98EAEC71CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "Rand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAEC81CA6CE2800C669CB /* Debug */,
+				E98EAEC91CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E98EAECA1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "RandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAECB1CA6CE2800C669CB /* Debug */,
+				E98EAECC1CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E98EAECD1CA6CE2800C669CB /* Build configuration list for PBXNativeTarget "RandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E98EAECE1CA6CE2800C669CB /* Debug */,
+				E98EAECF1CA6CE2800C669CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E98EAE6E1CA6CE2700C669CB /* Project object */;
+}
