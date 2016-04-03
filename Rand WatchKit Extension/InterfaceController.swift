@@ -12,6 +12,16 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var numberLabel: WKInterfaceLabel!
+    
+    @IBAction func setBounds() {
+        presentControllerWithName("BoundsController", context: nil)
+    }
+    
+    @IBAction func generate() {
+        presentControllerWithName("BoundsController", context: nil)
+    }
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         

@@ -23,6 +23,7 @@
 		E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB61CA6CE2800C669CB /* GlanceController.swift */; };
 		E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */; };
 		E98EAEBB1CA6CE2800C669CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98EAEBA1CA6CE2800C669CB /* Assets.xcassets */; };
+		E98EAED31CB1521F00C669CB /* BoundsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAED21CB1521F00C669CB /* BoundsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		E98EAEBA1CA6CE2800C669CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E98EAEBC1CA6CE2800C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98EAED21CB1521F00C669CB /* BoundsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 		E98EAEB11CA6CE2800C669CB /* Rand WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E98EAED21CB1521F00C669CB /* BoundsController.swift */,
 				E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */,
 				E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */,
 				E98EAEB61CA6CE2800C669CB /* GlanceController.swift */,
@@ -438,6 +441,7 @@
 				E98EAEB51CA6CE2800C669CB /* ExtensionDelegate.swift in Sources */,
 				E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */,
 				E98EAEB31CA6CE2800C669CB /* InterfaceController.swift in Sources */,
+				E98EAED31CB1521F00C669CB /* BoundsController.swift in Sources */,
 				E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

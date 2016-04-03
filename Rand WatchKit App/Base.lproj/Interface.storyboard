@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6221" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3734"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--main-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="main" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Rand_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="00" id="AJU-DX-vWY">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="56"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Generate" id="rCq-Bk-K6K">
+                            <connections>
+                                <action selector="generate" destination="AgC-eL-Hgc" id="Z02-EZ-Du1"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="DJ4-y5-g5j">
+                        <items>
+                            <menuItem title="Set Bounds" icon="more" id="uzj-AT-gSy">
+                                <connections>
+                                    <action selector="setBounds" destination="AgC-eL-Hgc" id="iAK-op-FwP"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="numberLabel" destination="AJU-DX-vWY" id="gIr-30-1DB"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Bounds-->
+        <scene sceneID="siC-ze-5k9">
+            <objects>
+                <controller identifier="BoundsController" title="Bounds" id="PnT-YD-z8a" customClass="BoundsController" customModule="Rand_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.69999999999999996" alignment="left" id="Slu-sG-chC" userLabel="Horisontal Group">
+                            <items>
+                                <group width="79" height="1" alignment="left" layout="vertical" id="gce-aw-klk" userLabel="Vertical Group left">
+                                    <items>
+                                        <picker width="1" height="44" alignment="left" verticalAlignment="center" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Ug8-8N-qca" userLabel="Upper bound picker"/>
+                                        <picker width="1" height="44" alignment="left" verticalAlignment="center" focusStyle="sequence" indicatorMode="shownWhileFocused" id="h4a-cB-sTS" userLabel="Lower bound picker"/>
+                                    </items>
+                                </group>
+                                <imageView width="40" height="1" alignment="right" verticalAlignment="center" id="jX2-Oc-3iN"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Done" id="44t-Gn-C8H">
+                            <connections>
+                                <action selector="done" destination="PnT-YD-z8a" id="WZL-mK-5Wn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="image" destination="jX2-Oc-3iN" id="J7V-B6-Qx6"/>
+                        <outlet property="lowerBoundPicker" destination="h4a-cB-sTS" id="jxY-If-d3Z"/>
+                        <outlet property="upperBoundPicker" destination="Ug8-8N-qca" id="57c-nQ-6fo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="431" y="217.75"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="rjY-Ar-IMT">
             <objects>
-                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="Rand_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group alignment="left" id="gv7-I2-MZq"/>
                         <group alignment="left" id="eew-Gs-W6Y"/>
