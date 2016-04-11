@@ -10,13 +10,13 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class CustomInterfaceController: WKInterfaceController {
 
-    @IBOutlet var numberLabel: WKInterfaceLabel!
     
-    @IBAction func setBounds() {
-        presentControllerWithName("BoundsController", context: nil)
-    }
+    @IBOutlet var pickerOne: WKInterfacePicker!
+    @IBOutlet var pikerTwo: WKInterfacePicker!
+    
+    @IBOutlet var numberLabel: WKInterfaceLabel!
     
     @IBAction func generate() {
         presentControllerWithName("BoundsController", context: nil)
@@ -37,5 +37,17 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
+    
+    @IBAction func toBinary() {
+        pushControllerWithName("binary", context: nil)
+    }
+    
+    @IBAction func toTernary() {
+        pushControllerWithName("ternay", context: nil)
+    }
+    
+    @IBAction func toSenary() {
+        pushControllerWithName("senary", context: nil)
+    }
 }

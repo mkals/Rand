@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F18b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rKz-5R-skA">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15F18b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lmK-X8-gU2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
@@ -8,7 +8,7 @@
         <!--Custom-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="main" title="Custom" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Rand_WatchKit_App" customModuleProvider="target">
+                <controller identifier="custom" title="Custom" id="AgC-eL-Hgc" customClass="CustomInterfaceController">
                     <items>
                         <group width="67" height="48" alignment="left" id="fRm-VQ-WtO">
                             <items>
@@ -19,7 +19,7 @@
                         <label alignment="center" verticalAlignment="center" text="00" id="AJU-DX-vWY">
                             <fontDescription key="font" type="system" weight="thin" pointSize="56"/>
                         </label>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Generate" id="rCq-Bk-K6K">
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Generate" id="rCq-Bk-K6K">
                             <connections>
                                 <action selector="generate" destination="AgC-eL-Hgc" id="Z02-EZ-Du1"/>
                             </connections>
@@ -27,15 +27,27 @@
                     </items>
                     <menu key="menu" id="DJ4-y5-g5j">
                         <items>
-                            <menuItem title="Set Bounds" icon="more" id="uzj-AT-gSy">
+                            <menuItem title="Set Bounds" icon="accept" id="uzj-AT-gSy" userLabel="Binary">
                                 <connections>
-                                    <action selector="setBounds" destination="AgC-eL-Hgc" id="iAK-op-FwP"/>
+                                    <action selector="toBinary" destination="AgC-eL-Hgc" id="i4F-zv-e4P"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Ternary" id="z1O-7S-iDn" userLabel="Ternary">
+                                <connections>
+                                    <action selector="toTernary" destination="AgC-eL-Hgc" id="H4T-ot-HPU"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Dice" id="emD-5y-MrQ" userLabel="Senary">
+                                <connections>
+                                    <action selector="toSenary" destination="AgC-eL-Hgc" id="IPf-Rk-PBT"/>
                                 </connections>
                             </menuItem>
                         </items>
                     </menu>
                     <connections>
                         <outlet property="numberLabel" destination="AJU-DX-vWY" id="gIr-30-1DB"/>
+                        <outlet property="pickerOne" destination="9d9-nj-QgS" id="lqF-nn-8Jl"/>
+                        <outlet property="pikerTwo" destination="en9-Po-CaP" id="bnp-K0-gRB"/>
                     </connections>
                 </controller>
             </objects>
@@ -44,29 +56,114 @@
         <!--Binary-->
         <scene sceneID="e5x-qk-MW9">
             <objects>
-                <controller title="Binary" id="lmK-X8-gU2"/>
+                <controller identifier="binary" title="Binary" id="lmK-X8-gU2" customClass="BinaryInterfaceController" customModule="Rand_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="0" id="HWu-91-ixo">
+                            <fontDescription key="font" type="boldSystem" pointSize="50"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="q4k-jZ-WnV">
+                            <connections>
+                                <action selector="flip" destination="lmK-X8-gU2" id="n9h-xn-sMo"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="PJL-QZ-7KR">
+                        <items>
+                            <menuItem title="Menu Item" image="Ternary" id="xPK-rD-uyu" userLabel="Ternary">
+                                <connections>
+                                    <action selector="toTernary" destination="lmK-X8-gU2" id="rJi-0t-G9A"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Dice" id="9sY-DV-NrM" userLabel="Senary">
+                                <connections>
+                                    <action selector="toSenary" destination="lmK-X8-gU2" id="OAp-6k-9ql"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Custom" id="aiH-jg-Eru" userLabel="Custom">
+                                <connections>
+                                    <action selector="toCustom" destination="lmK-X8-gU2" id="L1v-JJ-Z6R"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="label" destination="HWu-91-ixo" id="9vY-Jw-maD"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="463" y="-6"/>
         </scene>
         <!--Ternary-->
         <scene sceneID="iZp-oN-Nkw">
             <objects>
-                <controller title="Ternary" id="LO5-vg-zMb"/>
+                <controller identifier="ternary" title="Ternary" id="LO5-vg-zMb" customClass="TernaryInterfaceController" customModule="Rand_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="0" id="e8E-LR-wSz">
+                            <fontDescription key="font" type="boldSystem" pointSize="50"/>
+                        </label>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Button" id="rvB-kL-CWt">
+                            <connections>
+                                <action selector="generate" destination="LO5-vg-zMb" id="tBC-hr-KSi"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="ztj-rc-hvi">
+                        <items>
+                            <menuItem title="Set Bounds" image="Binary" id="97e-v8-ipP" userLabel="Binary">
+                                <connections>
+                                    <action selector="toBinary" destination="LO5-vg-zMb" id="N0K-Wc-fId"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Dice" id="2ha-n6-8OD" userLabel="Senary">
+                                <connections>
+                                    <action selector="teSenary" destination="LO5-vg-zMb" id="bTe-cU-IPH"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Custom" id="Kyb-iO-vGh" userLabel="Custom">
+                                <connections>
+                                    <action selector="toCustom" destination="LO5-vg-zMb" id="E2r-dW-7jR"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="label" destination="e8E-LR-wSz" id="rMG-uu-2OF"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="463" y="263"/>
         </scene>
         <!--Senary-->
         <scene sceneID="D1c-Rq-6li">
             <objects>
-                <controller title="Senary" id="rKz-5R-skA" customClass="DiceInterfaceController" customModule="Rand_WatchKit_Extension">
+                <controller identifier="senary" title="Senary" id="rKz-5R-skA" customClass="DiceInterfaceController" customModule="Rand_WatchKit_Extension">
                     <items>
                         <imageView width="100" alignment="center" verticalAlignment="center" image="oneWatch" id="0QB-y1-BQg"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Generate" id="Rq8-DR-tNQ">
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Generate" id="Rq8-DR-tNQ">
                             <connections>
                                 <action selector="generate" destination="rKz-5R-skA" id="DFh-br-zPp"/>
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="nQJ-mg-Ofh">
+                        <items>
+                            <menuItem title="Set Bounds" image="Binary" id="BaE-bU-Pcf" userLabel="Binary">
+                                <connections>
+                                    <action selector="toBinary" destination="rKz-5R-skA" id="jph-t8-Mck"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Ternary" id="IeW-DI-m7D" userLabel="Ternary">
+                                <connections>
+                                    <action selector="toTernary" destination="rKz-5R-skA" id="b2J-JZ-wY3"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" image="Custom" id="vCq-r0-4sh" userLabel="Custom">
+                                <connections>
+                                    <action selector="toCustom" destination="rKz-5R-skA" id="oga-TV-OE2"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="image" destination="0QB-y1-BQg" id="0aA-K0-BsR"/>
                     </connections>
@@ -85,7 +182,7 @@
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="89" y="471"/>
+            <point key="canvasLocation" x="-48" y="543"/>
         </scene>
     </scenes>
 </document>

@@ -62,4 +62,16 @@ class DiceInterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    @IBAction func toBinary() {
+        pushControllerWithName("binary", context: nil)
+    }
+    
+    @IBAction func toTernary() {
+        pushControllerWithName("ternay", context: nil)
+    }
+    
+    @IBAction func toCustom() {
+        pushControllerWithName("custom", context: nil)
+    }
 }

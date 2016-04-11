@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E94E2C081CBB916100194303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E94E2C071CBB916100194303 /* Assets.xcassets */; };
 		E94E2C0A1CBB93CF00194303 /* DiceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E2C091CBB93CF00194303 /* DiceInterfaceController.swift */; };
+		E94E2C0C1CBBBD7E00194303 /* BinaryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E2C0B1CBBBD7E00194303 /* BinaryInterfaceController.swift */; };
+		E94E2C0E1CBBBD8B00194303 /* TernaryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94E2C0D1CBBBD8B00194303 /* TernaryInterfaceController.swift */; };
 		E98EAE7A1CA6CE2700C669CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE791CA6CE2700C669CB /* AppDelegate.swift */; };
 		E98EAE7C1CA6CE2700C669CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAE7B1CA6CE2700C669CB /* ViewController.swift */; };
 		E98EAE7F1CA6CE2700C669CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98EAE7D1CA6CE2700C669CB /* Main.storyboard */; };
@@ -19,7 +21,7 @@
 		E98EAE9F1CA6CE2700C669CB /* Rand WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E98EAE9E1CA6CE2700C669CB /* Rand WatchKit App.app */; };
 		E98EAEA51CA6CE2700C669CB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98EAEA31CA6CE2700C669CB /* Interface.storyboard */; };
 		E98EAEAE1CA6CE2800C669CB /* Rand WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E98EAEB31CA6CE2800C669CB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */; };
+		E98EAEB31CA6CE2800C669CB /* CustomInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB21CA6CE2800C669CB /* CustomInterfaceController.swift */; };
 		E98EAEB51CA6CE2800C669CB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */; };
 		E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB61CA6CE2800C669CB /* GlanceController.swift */; };
 		E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */; };
@@ -86,6 +88,8 @@
 /* Begin PBXFileReference section */
 		E94E2C071CBB916100194303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E94E2C091CBB93CF00194303 /* DiceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceInterfaceController.swift; sourceTree = "<group>"; };
+		E94E2C0B1CBBBD7E00194303 /* BinaryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryInterfaceController.swift; sourceTree = "<group>"; };
+		E94E2C0D1CBBBD8B00194303 /* TernaryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TernaryInterfaceController.swift; sourceTree = "<group>"; };
 		E98EAE761CA6CE2700C669CB /* Rand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98EAE791CA6CE2700C669CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E98EAE7B1CA6CE2700C669CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +107,7 @@
 		E98EAEA41CA6CE2700C669CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		E98EAEA81CA6CE2800C669CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98EAEAD1CA6CE2800C669CB /* Rand WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rand WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E98EAEB21CA6CE2800C669CB /* CustomInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInterfaceController.swift; sourceTree = "<group>"; };
 		E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E98EAEB61CA6CE2800C669CB /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -212,9 +216,11 @@
 		E98EAEB11CA6CE2800C669CB /* Rand WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E98EAED21CB1521F00C669CB /* BoundsController.swift */,
-				E98EAEB21CA6CE2800C669CB /* InterfaceController.swift */,
+				E94E2C0B1CBBBD7E00194303 /* BinaryInterfaceController.swift */,
+				E94E2C0D1CBBBD8B00194303 /* TernaryInterfaceController.swift */,
 				E94E2C091CBB93CF00194303 /* DiceInterfaceController.swift */,
+				E98EAEB21CA6CE2800C669CB /* CustomInterfaceController.swift */,
+				E98EAED21CB1521F00C669CB /* BoundsController.swift */,
 				E98EAEB41CA6CE2800C669CB /* ExtensionDelegate.swift */,
 				E98EAEB61CA6CE2800C669CB /* GlanceController.swift */,
 				E98EAEB81CA6CE2800C669CB /* ComplicationController.swift */,
@@ -443,8 +449,10 @@
 			files = (
 				E98EAEB51CA6CE2800C669CB /* ExtensionDelegate.swift in Sources */,
 				E98EAEB91CA6CE2800C669CB /* ComplicationController.swift in Sources */,
+				E94E2C0E1CBBBD8B00194303 /* TernaryInterfaceController.swift in Sources */,
 				E94E2C0A1CBB93CF00194303 /* DiceInterfaceController.swift in Sources */,
-				E98EAEB31CA6CE2800C669CB /* InterfaceController.swift in Sources */,
+				E94E2C0C1CBBBD7E00194303 /* BinaryInterfaceController.swift in Sources */,
+				E98EAEB31CA6CE2800C669CB /* CustomInterfaceController.swift in Sources */,
 				E98EAED31CB1521F00C669CB /* BoundsController.swift in Sources */,
 				E98EAEB71CA6CE2800C669CB /* GlanceController.swift in Sources */,
 			);
